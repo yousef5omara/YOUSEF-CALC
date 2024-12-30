@@ -1,0 +1,90 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: hsl(0, 0%, 95%);
+  overflow: auto;
+}
+
+#main {
+  width: 90%;
+  max-width: 463px;
+  height: auto;
+  background-color: hsl(0, 0%, 15%);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#xx {
+  background-color: rgb(206, 91, 91);
+}
+#xx:hover {
+  background-color: rgb(182, 70, 70);
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "cc xx . ."
+    "1 2 cc ."
+    "3 4 5 cc"
+    "6 7 8 cc"
+    "9 0 . cc"
+    "( ) . cc";
+  gap: 10px;
+  padding: 10px;
+}
+
+button {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: none;
+  background-color: hsl(0, 0%, 30%);
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+#screen {
+   height: 80px;
+  width: 100%;
+  padding: 10px;
+  font-size: 4rem;
+  background-color: hsl(0, 0%, 20%);
+  border: none;
+  color: white;
+  overflow-x: auto;
+
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 40%);
+}
+button:active {
+  background-color: hsl(0, 0%, 50%);
+}
+
+#cc {
+  background-color: hsl(39, 100%, 50%);
+}
+#cc:hover {
+  background-color: hsl(39, 100%, 58%);
+}
+#cc:active {
+  background-color: hsl(39, 100%, 65%);
+}
+
+@media (min-width: 768px) {
+  button {
+    font-size: 3rem;
+  }
+  #screen {
+    font-size: 4rem;
+    height: 98px;
+  }
+}
