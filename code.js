@@ -36,8 +36,9 @@ function add(value) {
 
 function ans() {
     if (screen.textContent.includes("÷0")) {
+        screen.style.fontSize = "2rem"
         screen.textContent = "هذه العمليه غير معرفه";
-        screen.style.fontSize = "3.5rem"
+        
     }
     else{
         try {
